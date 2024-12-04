@@ -47,13 +47,13 @@
  3. Initialise the `TELOXIDE_TOKEN` environmental variable to your token:
 ```bash
 # Unix-like
-$ export TELOXIDE_TOKEN=<Your token here>
+$ export TELOXIDE_TOKEN=bm90IHdoYXQgeW91IGFyZSBsb29raW5nIGZvcg==
 
 # Windows command line
-$ set TELOXIDE_TOKEN=<Your token here>
+$ set TELOXIDE_TOKEN=bm90IHdoYXQgeW91IGFyZSBsb29raW5nIGZvcg==
 
 # Windows PowerShell
-$ $env:TELOXIDE_TOKEN=<Your token here>
+$ $env:TELOXIDE_TOKEN=bm90IHdoYXQgeW91IGFyZSBsb29raW5nIGZvcg==
 ```
 
  4. Make sure that your Rust compiler is up to date (`teloxide` currently requires rustc at least version 1.80):
