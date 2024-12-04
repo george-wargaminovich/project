@@ -1,49 +1,49 @@
 <div align="center">
   <img src="./media/teloxide-logo.png" width="250"/>
   <h1><code>teloxide</code></h1>
-  <a href="https://docs.rs/teloxide/">
-    <img src="https://docs.rs/teloxide/badge.svg">
+  <a href="http://docs.rs/teloxide/">
+    <img src="http://docs.rs/teloxide/badge.svg">
   </a>
-  <a href="https://github.com/teloxide/teloxide/actions">
-    <img src="https://github.com/teloxide/teloxide/workflows/Continuous%20integration/badge.svg">
+  <a href="http://github.com/teloxide/teloxide/actions">
+    <img src="http://github.com/teloxide/teloxide/workflows/Continuous%20integration/badge.svg">
   </a>
-  <a href="https://crates.io/crates/teloxide">
-    <img src="https://img.shields.io/crates/v/teloxide.svg">
+  <a href="http://crates.io/crates/teloxide">
+    <img src="http://img.shields.io/crates/v/teloxide.svg">
   </a>
-  <a href="https://core.telegram.org/bots/api">
-    <img src="https://img.shields.io/badge/API%20coverage-Up%20to%207.2%20(inclusively)-green.svg">
+  <a href="http://core.telegram.org/bots/api">
+    <img src="http://img.shields.io/badge/API%20coverage-Up%20to%207.2%20(inclusively)-green.svg">
   </a>
-  <a href="https://t.me/teloxide">
-    <img src="https://img.shields.io/badge/support-t.me%2Fteloxide-blueviolet">
+  <a href="http://t.me/teloxide">
+    <img src="http://img.shields.io/badge/support-t.me%2Fteloxide-blueviolet">
   </a>
 
-  A full-featured framework that empowers you to easily build [Telegram bots](https://telegram.org/blog/bot-revolution) using [Rust](https://www.rust-lang.org/). It handles all the difficult stuff so you can focus only on your business logic.
+  A full-featured framework that empowers you to easily build [Telegram bots](http://telegram.org/blog/bot-revolution) using [Rust](http://www.rust-lang.org/). It handles all the difficult stuff so you can focus only on your business logic.
 </div>
 
 ## Highlights
 
  - **Declarative design.** `teloxide` is based upon [`dptree`], a functional [chain of responsibility] pattern that allows you to express pipelines of message processing in a highly declarative and extensible style.
 
-[`dptree`]: https://github.com/teloxide/dptree
-[chain of responsibility]: https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern
+[`dptree`]: http://github.com/teloxide/dptree
+[chain of responsibility]: http://en.wikipedia.org/wiki/Chain-of-responsibility_pattern
 
  - **Feature-rich.** You can use both long polling and webhooks, configure an underlying HTTPS client, set a custom URL of a Telegram API server, do graceful shutdown, and much more.
 
  - **Simple dialogues.** Our dialogues subsystem is simple and easy-to-use, and, furthermore, is agnostic of how/where dialogues are stored. For example, you can just replace a one line to achieve [persistence]. Out-of-the-box storages include [Redis] and [Sqlite].
 
-[persistence]: https://en.wikipedia.org/wiki/Persistence_(computer_science)
-[Redis]: https://redis.io/
-[Sqlite]: https://www.sqlite.org
+[persistence]: http://en.wikipedia.org/wiki/Persistence_(computer_science)
+[Redis]: http://redis.io/
+[Sqlite]: http://www.sqlite.org
 
  - **Strongly typed commands.** Define bot commands as an `enum` and teloxide will parse them automatically — just like JSON structures in [`serde-json`] and command-line arguments in [`structopt`].
 
-[`structopt`]: https://github.com/TeXitoi/structopt
-[`serde-json`]: https://github.com/serde-rs/json
+[`structopt`]: http://github.com/TeXitoi/structopt
+[`serde-json`]: http://github.com/serde-rs/json
 
 ## Setting up your environment
 
  1. [Download Rust](http://rustup.rs/).
- 2. Create a new bot using [@Botfather](https://t.me/botfather) to get a token in the format `123456789:blablabla`.
+ 2. Create a new bot using [@Botfather](http://t.me/botfather) to get a token in the format `123456789:blablabla`.
  3. Initialise the `TELOXIDE_TOKEN` environmental variable to your token:
 ```bash
 # Unix-like
@@ -114,8 +114,8 @@ Commands are strongly typed and defined declaratively, similar to how we define 
  - `/usernameandage <your username> <your age>`
  - `/help`
 
-[structopt]: https://docs.rs/structopt/0.3.9/structopt/
-[serde-json]: https://github.com/serde-rs/json
+[structopt]: http://docs.rs/structopt/0.3.9/structopt/
+[serde-json]: http://github.com/serde-rs/json
 
 [[`examples/command.rs`](crates/teloxide/examples/command.rs)]
 
@@ -167,7 +167,7 @@ async fn answer(bot: Bot, msg: Message, cmd: Command) -> ResponseResult<()> {
 
 A dialogue is typically described by an enumeration where each variant is one possible state of the dialogue. There are also _state handler functions_, which may turn a dialogue from one state to another, thereby forming an [FSM].
 
-[FSM]: https://en.wikipedia.org/wiki/Finite-state_machine
+[FSM]: http://en.wikipedia.org/wiki/Finite-state_machine
 
 Below is a bot that asks you three questions and then sends the answers back to you:
 
@@ -286,14 +286,14 @@ async fn receive_location(
 
 ## Testing
 
-A community made crate [`teloxide_tests`](https://github.com/LasterAlex/teloxide_tests) can be used to test your bots.
+A community made crate [`teloxide_tests`](http://github.com/LasterAlex/teloxide_tests) can be used to test your bots.
 
-[Some testing examples >>](https://github.com/LasterAlex/teloxide_tests/tree/master/examples)
+[Some testing examples >>](http://github.com/LasterAlex/teloxide_tests/tree/master/examples)
 
 ## Tutorials
 
- - [_"Migrating my family finance bot from Python to Rust (teloxide) because I am tired of exceptions (part 1)"_](https://trkohler.com/posts/i-migrated-my-family-finance-bot-from-python-to-rust-because-i-am-tired-of-exceptions/) by Troy Köhler.
- - [_"Migrating my family finance bot from Python to Rust (teloxide) [part 2]"_](https://trkohler.com/posts/migrating-my-family-finance-bot-from-python-to-rust-teloxide-part-2/) by Troy Köhler.
+ - [_"Migrating my family finance bot from Python to Rust (teloxide) because I am tired of exceptions (part 1)"_](http://trkohler.com/posts/i-migrated-my-family-finance-bot-from-python-to-rust-because-i-am-tired-of-exceptions/) by Troy Köhler.
+ - [_"Migrating my family finance bot from Python to Rust (teloxide) [part 2]"_](http://trkohler.com/posts/migrating-my-family-finance-bot-from-python-to-rust-teloxide-part-2/) by Troy Köhler.
 
 ## FAQ
 
@@ -305,9 +305,9 @@ A:
  - [GitHub Discussions] is a place where you can ask us for help in a less formal manner.
  - If you need quick help in real-time, you should ask a question in [our official Telegram group].
 
-[Issues]: https://github.com/teloxide/teloxide/issues
-[our official Telegram group]: https://t.me/teloxide
-[GitHub Discussions]: https://github.com/teloxide/teloxide/discussions
+[Issues]: http://github.com/teloxide/teloxide/issues
+[our official Telegram group]: http://t.me/teloxide
+[GitHub Discussions]: http://github.com/teloxide/teloxide/discussions
 
 **Q: Do you support the Telegram API for clients?**
 
@@ -325,36 +325,36 @@ A: Yes, see [`examples/purchase.rs`](crates/teloxide/examples/purchase.rs).
 
 Feel free to propose your own bot to our collection!
 
- - [`raine/tgreddit`](https://github.com/raine/tgreddit) — A bot that sends the top posts of your favorite subreddits to Telegram.
- - [`magnickolas/remindee-bot`](https://github.com/magnickolas/remindee-bot) — Telegram bot for managing reminders.
- - [`WaffleLapkin/crate_upd_bot`](https://github.com/WaffleLapkin/crate_upd_bot) — A bot that notifies about crate updates.
- - [`mattrighetti/GroupActivityBot`](https://github.com/mattrighetti/group-activity-bot-rs) — Telegram bot that keeps track of user activity in groups.
- - [`alenpaul2001/AurSearchBot`](https://gitlab.com/alenpaul2001/aursearchbot) — Telegram bot for searching in Arch User Repository (AUR).
- - [`ArtHome12/vzmuinebot`](https://github.com/ArtHome12/vzmuinebot) — Telegram bot for food menu navigate.
- - [`studiedlist/EddieBot`](https://gitlab.com/studiedlist/eddie-bot) — Chatting bot with several entertainment features.
- - [`modos189/tg_blackbox_bot`](https://gitlab.com/modos189/tg_blackbox_bot) — Anonymous feedback for your Telegram project.
- - [`0xNima/spacecraft`](https://github.com/0xNima/spacecraft) — Yet another telegram bot to downloading Twitter spaces.
- - [`0xNima/Twideo`](https://github.com/0xNima/Twideo) — Simple Telegram Bot for downloading videos from Twitter via their links.
- - [`mattrighetti/libgen-bot-rs`](https://github.com/mattrighetti/libgen-bot-rs) — Telegram bot to interface with libgen.
- - [`zamazan4ik/npaperbot-telegram`](https://github.com/zamazan4ik/npaperbot-telegram) — Telegram bot for searching via C++ proposals.
- - [`studentenherz/dlebot`](https://github.com/studentenherz/dlebot) — A bot to query definitions of words from the Spanish Language Dictionary.
- - [`fr0staman/fr0staman_bot`](https://github.com/fr0staman/fr0staman_bot) — Feature rich Telegram game-like bot with pigs 🐽.
- - [`franciscofigueira/transferBot`](https://github.com/franciscofigueira/transferBot) — Telegram bot that notifies of crypto token transfers.
+ - [`raine/tgreddit`](http://github.com/raine/tgreddit) — A bot that sends the top posts of your favorite subreddits to Telegram.
+ - [`magnickolas/remindee-bot`](http://github.com/magnickolas/remindee-bot) — Telegram bot for managing reminders.
+ - [`WaffleLapkin/crate_upd_bot`](http://github.com/WaffleLapkin/crate_upd_bot) — A bot that notifies about crate updates.
+ - [`mattrighetti/GroupActivityBot`](http://github.com/mattrighetti/group-activity-bot-rs) — Telegram bot that keeps track of user activity in groups.
+ - [`alenpaul2001/AurSearchBot`](http://gitlab.com/alenpaul2001/aursearchbot) — Telegram bot for searching in Arch User Repository (AUR).
+ - [`ArtHome12/vzmuinebot`](http://github.com/ArtHome12/vzmuinebot) — Telegram bot for food menu navigate.
+ - [`studiedlist/EddieBot`](http://gitlab.com/studiedlist/eddie-bot) — Chatting bot with several entertainment features.
+ - [`modos189/tg_blackbox_bot`](http://gitlab.com/modos189/tg_blackbox_bot) — Anonymous feedback for your Telegram project.
+ - [`0xNima/spacecraft`](http://github.com/0xNima/spacecraft) — Yet another telegram bot to downloading Twitter spaces.
+ - [`0xNima/Twideo`](http://github.com/0xNima/Twideo) — Simple Telegram Bot for downloading videos from Twitter via their links.
+ - [`mattrighetti/libgen-bot-rs`](http://github.com/mattrighetti/libgen-bot-rs) — Telegram bot to interface with libgen.
+ - [`zamazan4ik/npaperbot-telegram`](http://github.com/zamazan4ik/npaperbot-telegram) — Telegram bot for searching via C++ proposals.
+ - [`studentenherz/dlebot`](http://github.com/studentenherz/dlebot) — A bot to query definitions of words from the Spanish Language Dictionary.
+ - [`fr0staman/fr0staman_bot`](http://github.com/fr0staman/fr0staman_bot) — Feature rich Telegram game-like bot with pigs 🐽.
+ - [`franciscofigueira/transferBot`](http://github.com/franciscofigueira/transferBot) — Telegram bot that notifies of crypto token transfers.
 
 <details>
 <summary>Show bots using `teloxide` older than v0.6.0</summary>
 
- - [`mxseev/logram`](https://github.com/mxseev/logram) — Utility that takes logs from anywhere and sends them to Telegram.
- - [`alexkonovalov/PedigreeBot`](https://github.com/alexkonovalov/PedigreeBot) — A Telegram bot for building family trees.
- - [`Hermitter/tepe`](https://github.com/Hermitter/tepe) — A CLI to command a bot to send messages and files over Telegram.
- - [`myblackbeard/basketball-betting-bot`](https://github.com/myblackbeard/basketball-betting-bot) — The bot lets you bet on NBA games against your buddies.
- - [`dracarys18/grpmr-rs`](https://github.com/dracarys18/grpmr-rs) — Modular Telegram Group Manager Bot written in Rust.
- - [`ArtHome12/cognito_bot`](https://github.com/ArtHome12/cognito_bot) — The bot is designed to anonymize messages to a group.
- - [`crapstone/hsctt`](https://codeberg.org/crapstones-bots/hsctt) — A bot that converts HTTP status codes into text.
+ - [`mxseev/logram`](http://github.com/mxseev/logram) — Utility that takes logs from anywhere and sends them to Telegram.
+ - [`alexkonovalov/PedigreeBot`](http://github.com/alexkonovalov/PedigreeBot) — A Telegram bot for building family trees.
+ - [`Hermitter/tepe`](http://github.com/Hermitter/tepe) — A CLI to command a bot to send messages and files over Telegram.
+ - [`myblackbeard/basketball-betting-bot`](http://github.com/myblackbeard/basketball-betting-bot) — The bot lets you bet on NBA games against your buddies.
+ - [`dracarys18/grpmr-rs`](http://github.com/dracarys18/grpmr-rs) — Modular Telegram Group Manager Bot written in Rust.
+ - [`ArtHome12/cognito_bot`](http://github.com/ArtHome12/cognito_bot) — The bot is designed to anonymize messages to a group.
+ - [`crapstone/hsctt`](http://codeberg.org/crapstones-bots/hsctt) — A bot that converts HTTP status codes into text.
 
 </details>
 
-See [1900+ other public repositories using `teloxide` >>](https://github.com/teloxide/teloxide/network/dependents)
+See [1900+ other public repositories using `teloxide` >>](http://github.com/teloxide/teloxide/network/dependents)
 
 ## Contributing
 
